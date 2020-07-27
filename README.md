@@ -1,6 +1,6 @@
-# Instabot.py 🤖 🌟
+# Core JAVA Programs 🤖 🌟
 
-## Collection of all Java core basic codes
+## Collection of all basic programs required for Core Java
 
 ## Requirements
 
