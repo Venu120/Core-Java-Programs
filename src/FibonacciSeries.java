@@ -1,27 +1,27 @@
-import java.util.Scanner;
+import java.util.*;
 public class FibonacciSeries {
-  public void fibonacciSeries(int n) {
+  public List<Integer> fibonacciSeries(int n) {
+    List<Integer> list = new ArrayList<Integer>();
     if(n == 0) {
-      System.out.println("Error");
-      System.exit(0);
+      return null;
     }
     if(n == 1) {
-      System.out.println("0");
-      System.exit(0);
+      list.addAll(Arrays.asList(0));
+      return list;
     }
     if(n == 2) {
-      System.out.println("1");
-      System.exit(0);
+      list.addAll(Arrays.asList(0,1));
+      return list;
     }
     int a = 0, b = 1, c = 0;
-    System.out.print(a + " " + b);
+    list.addAll(Arrays.asList(0,1));
     for (int i = 0; i < n-2; i++) {
       c = a + b;
-      System.out.print(" " + c);
+      list.add(c);
       a = b;
       b = c;
     }
-
+    return list;
   }
 
   public static void main(String[] args) {
@@ -29,6 +29,7 @@ public class FibonacciSeries {
     System.out.println("Enter the nth terms = ");
     int n = sc.nextInt();
     FibonacciSeries fibonacciSeries = new FibonacciSeries();
-    fibonacciSeries.fibonacciSeries(n);
+    List<Integer> list = fibonacciSeries.fibonacciSeries(n);
+    System.out.println(list);
   }
 }
