@@ -26,5 +26,4 @@ public class SwapTwoNumbers {
     swapWithoutVariable(a, b);
   }
 
-  
 }
