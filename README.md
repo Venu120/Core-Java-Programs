@@ -4,4 +4,5 @@
 
 ## Requirements
 
-- JDK
+- JDK 14.0.2
+- VSCode
