@@ -2,7 +2,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class pyramidPattern2 {
+public class PyramidPattern {
   public static void printPattern(int n) {
     for(int i = 1; i<=n; i++) {
       for(int j=n; j>=i; j--) {
