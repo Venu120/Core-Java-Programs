@@ -2,6 +2,14 @@ package patterns;
 
 import java.util.Scanner;
 
+/*
+    *
+   * *
+  *   *
+ *     *
+*       *
+*/
+
 public class Shape_A {
   public static void printPattern(int n) {
     for (int i = 1; i <= n; i++) {
